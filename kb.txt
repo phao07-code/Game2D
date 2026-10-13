@@ -1,0 +1,125 @@
+﻿Thể loại: 2D Adventure / Action RPG (phiêu lưu, đánh quái, nhặt đồ, lên cấp)
+Cốt truyện: Làng bị người ngoài hành tinh bắt làm nô lệ → Nhân vật chính từ tương lai xuyên không về cứu làng, mang theo thiết bị hiện đại.
+Có hơn 3 nhân vật (có thể cho người chơi chọn hoặc có hệ thống đồng đội).
+ Tên game: Giải cứu ngôi làng Hoa
+1. Thể loại (Genre)
+* Thể loại chính: 2D Action-Adventure RPG (Phiêu lưu hành động nhập vai)
+* Phụ: Exploration + Light Strategy (có yếu tố chọn lựa và xây dựng đội hình)
+* Góc nhìn: Top-down (nhìn từ trên xuống) – dễ làm và phù hợp người mới với Godot 2D
+
+
+2. Cốt truyện (Story / Plot)
+Bối cảnh chính:
+Năm 2147, Trái Đất đã tiếp xúc với một chủng tộc ngoài hành tinh gọi là Vera. Chúng không tiêu diệt loài người, mà bắt cóc toàn bộ dân làng để làm nô lệ lao động khai thác tài nguyên trên hành tinh khác.
+Nhân vật chính – Kai – là một kỹ sư trẻ sống ở tương lai. Trong một thí nghiệm xuyên không thất bại, cậu bị kéo về quá khứ đúng thời điểm làng bị bắt. Cậu mang theo vài thiết bị hiện đại còn sót lại (súng năng lượng nhỏ, drone trinh sát, và một chip AI tên Aria).
+Cốt truyện chính (3 hồi):
+Hồi 1 – Thức tỉnh
+* Kai tỉnh dậy ở ngoại ô làng đã bị tàn phá.
+* Gặp 3–4 người dân làng còn sót lại (các nhân vật có thể chơi được).
+* Nhiệm vụ đầu: cứu những người bị giam gần làng, tìm hiểu kẻ thù.
+Hồi 2 – Kháng chiến
+* Xây dựng căn cứ bí mật trong rừng.
+* Thu thập mảnh thiết bị tương lai bị rơi rải rác.
+* Đối đầu với các chỉ huy Vera cấp thấp và trung.
+* Mở khóa kỹ năng kết hợp giữa công nghệ tương lai + võ thuật dân làng.
+Hồi 3 – Giải phóng
+* Tấn công pháo đài chính của Vera.
+* Lựa chọn quan trọng:
+   * Giết sạch kẻ thù
+   * Hay tìm cách gửi chúng về hành tinh gốc (kết thúc khác nhau)
+Kết thúc:
+* Có 3 ending chính + 1 secret ending (nếu cứu được toàn bộ dân làng + thu thập đủ thiết bị).
+________________
+
+
+3. Thế giới game (Game World)
+Bản đồ chính gồm 5 khu vực lớn:
+1. Làng Rừng Sâu (Starting Area) – Làng bị phá hủy, nhiều nhà cháy, tù nhân bị giam.
+2. Rừng Sương Mù – Khu vực khám phá, có quái vật bị nhiễm năng lượng ngoài hành tinh.
+3. Hang Động Khoáng – Nơi Vera khai thác tài nguyên, nhiều cỗ máy.
+4. Pháo đài Bay (Floating Outpost) – Căn cứ trung gian của kẻ thù.
+5. Nhà tù Tinh Vân (Final Area) – Nơi giam giữ phần lớn dân làng.
+Đặc điểm thế giới:
+* Ngày/đêm ảnh hưởng đến độ mạnh của quái và khả năng ẩn nấp.
+* Một số khu vực chỉ mở khi có nhân vật chuyên biệt trong đội.
+* Có hệ thống “Dư âm thời gian” – nơi hiện ra ảo ảnh của tương lai giúp gợi ý cốt truyện.
+________________
+
+
+4. Cơ chế game (Core Mechanics)
+Hệ thống nhân vật (hơn 3 nhân vật):
+Người chơi điều khiển 1 nhân vật chính tại một thời điểm, nhưng có thể đổi nhân vật nhanh (giống Divinity hoặc Sea of Stars).
+Nhân vật
+	Vai trò
+	Đặc điểm nổi bật
+	Skill đặc trưng
+	Kai
+	Công nghệ
+	Người từ tương lai
+	Súng năng lượng + Drone
+	Lira
+	Chiến binh
+	Nữ thợ săn làng
+	Đánh gần mạnh, máu cao
+	Thorn
+	Hỗ trợ / Pháp sư
+	Người già biết y thuật
+	Hồi máu + làm chậm quái
+	Ryn
+	Tầm xa
+	Cậu bé tinh mắt
+	Bắn cung + bẫy
+	Vex (mở khóa sau)
+	Phản bội Vey’Rith
+	Người ngoài hành tinh cải tạo
+	Skill điều khiển năng lượng lạ
+	Cơ chế cốt lõi:
+* Di chuyển + tấn công real-time (không theo lượt).
+* Hệ thống lên cấp riêng cho từng nhân vật (Exp + Skill Point).
+* Nhặt đồ & chế tạo: vật liệu từ quái + mảnh công nghệ tương lai → chế vũ khí/giáp.
+* Hệ thống đồng đội: có thể để 1–2 nhân vật AI hỗ trợ (đơn giản).
+* Stealth nhẹ: một số khu vực có thể lẻn thay vì đánh.
+* Hệ thống lựa chọn: đối thoại ảnh hưởng đến quan hệ nhân vật và ending.
+Combat đơn giản cho người mới:
+* Đánh thường + 2–3 skill chủ động + 1 ultimate.
+* Có thanh năng lượng (Energy) thay vì mana phức tạp.
+________________
+
+
+5. Phong cách nghệ thuật (Art Style)
+Khuyến nghị cho người mới (dễ làm + đẹp):
+* Pixel Art độ phân giải trung bình (16x16 hoặc 32x32 nhân vật).
+* Màu sắc:
+   * Làng và rừng: tông xanh lục + nâu ấm
+   * Khu vực ngoài hành tinh: tím than + xanh điện + cam neon
+* Ánh sáng: dùng Light2D của Godot để tạo không khí đêm và hiệu ứng năng lượng.
+* Animation: ít frame nhưng mượt (idle, run, attack, hurt, death).
+Tham khảo phong cách:
+* Eastward + Hyper Light Drifter + Dead Cells (một chút)
+→ Vừa cổ điển vừa có chút khoa học viễn tưởng.
+________________
+
+
+6. Công nghệ sử dụng (Engine / Language / Tools / Assets)
+Hạng mục
+	Lựa chọn
+	Lý do
+	Game Engine
+	Godot 4.7.2 Standard
+	Bạn đã chọn, rất phù hợp 2D
+	Ngôn ngữ
+	GDScript
+	Dễ học nhất cho người mới
+	Framework / Library
+	Không cần thêm (dùng sẵn Godot)
+	Giữ đơn giản
+	Công cụ hỗ trợ
+	- Aseprite hoặc Piskel (vẽ pixel)
+- Tiled (làm map nếu cần)
+- Audacity / SFXR (âm thanh)
+	Miễn phí, dễ dùng
+	Asset
+	- Kenney.nl (miễn phí)
+- itch.io (pixel art packs)
+- Godot Asset Library
+	Dùng asset có sẵn lúc đầu để tập trung vào code và gameplay
